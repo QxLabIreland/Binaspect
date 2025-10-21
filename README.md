@@ -1,19 +1,11 @@
 # Binaspect
 
-TLDR: Python tools for analyzing binaural/stereo audio. Provides functions to compute and visualize interaural cues (ITD, IPD, ILR, ILD) as spectrograms and histograms, along with simple similarity metrics for comparisons.
+- Full reference binaural fidelity testing toolbox in Python.
+- Compute and visualize interaural cues (ITD, IPD, ILR, ILD) spectrograms and histograms.
+- Visualize degradations in spatial fidelity between test and reference signals.
+- Simple similarity metrics for comparisons.
 
-Binaspect is an open-source Python library for binaural
-audio analysis, visualization, and feature generation. Binaspect gen-
-erates interpretable “azimuth maps” by calculating modified inter-
-aural time and level difference spectrograms, and clustering those
-time-frequency (TF) bins into stable time-azimuth histogram repre-
-sentations. This allows multiple active sources to appear as distinct
-azimuthal clusters, while degradations manifest as broadened, dif-
-fused, or shifted distributions. Crucially, Binaspect operates blindly
-on audio, requiring no prior knowledge of head models. These vi-
-sualizations enable researchers and engineers to observe how binau-
-ral cues are degraded by codec and renderer design choices, among
-other downstream processes.
+Binaspect is an open-source Python library for binaural audio analysis, visualization, and feature generation. It computes modified interaural time and level-difference spectrograms to produce interpretable "azimuth maps" by clustering time–frequency bins into stable time–azimuth histogram representations. Multiple active sources appear as distinct azimuthal clusters, while degradations manifest as broadened, fused, or shifted distributions. Binaspect operates blindly on audio (no head-model priors required), enabling researchers and engineers to inspect how binaural cues are affected by codecs, renderers, and other processing.
 
 ## Citation
 If you use Binaspect in your research, please cite the following paper:
