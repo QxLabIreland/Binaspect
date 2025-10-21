@@ -74,13 +74,13 @@ The following scripts demonstrate some practical uses of the library for various
         <td style="border:none; padding:0.4rem;">
             <audio controls>
                 <source src="audio/ambisonic_examples/castanetsRev_dynamic_A0_A360_E30_HOA_REF_rendered.wav" type="audio/wav">
-                Your browser does not support the audio element.
+                <!-- Your browser does not support the audio element. -->
             </audio>
         </td>
         <td style="border:none; padding:0.4rem;">
             <audio controls>
                 <source src="audio/ambisonic_examples/castanetsRev_dynamic_A0_A360_E30_FOA_REF_rendered.wav" type="audio/wav">
-                Your browser does not support the audio element.
+                <!-- Your browser does not support the audio element. -->
             </audio>
         </td>
     </tr>
@@ -107,19 +107,19 @@ The following scripts demonstrate some practical uses of the library for various
         <td style="border:none; padding:0.4rem;">
             <audio controls>
                 <source src="audio/opus_examples/castanets360_opus512k.wav" type="audio/wav">
-                Your browser does not support the audio element.
+                <!-- Your browser does not support the audio element. -->
             </audio>
         </td>
         <td style="border:none; padding:0.4rem;">
             <audio controls>
                 <source src="audio/opus_examples/castanets360_opus128k.wav" type="audio/wav">
-                Your browser does not support the audio element.
+                <!-- Your browser does not support the audio element. -->
             </audio>
         </td>
         <td style="border:none; padding:0.4rem;">
             <audio controls>
                 <source src="audio/opus_examples/castanets360_opus32k.wav" type="audio/wav">
-                Your browser does not support the audio element.
+                <!-- Your browser does not support the audio element. -->
             </audio>
         </td>
     </tr>
@@ -147,13 +147,13 @@ The following scripts demonstrate some practical uses of the library for various
         <td style="border:none; padding:0.4rem;">
             <audio controls>
                 <source src="audio/downmix_example/2_source_7_1.wav" type="audio/wav">
-                Your browser does not support the audio element.
+                <!-- Your browser does not support the audio element. -->
             </audio>
         </td>
         <td style="border:none; padding:0.4rem;">
             <audio controls>
                 <source src="audio/downmix_example/2_source_5_1.wav" type="audio/wav">
-                Your browser does not support the audio element.
+                <!-- Your browser does not support the audio element. -->
             </audio>
         </td>
     </tr>
@@ -161,7 +161,7 @@ The following scripts demonstrate some practical uses of the library for various
 
 ---
 
-<b>
+<br>
 
 To run, use: `python -m examples.name_of_example`
 
