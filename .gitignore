@@ -1,0 +1,32 @@
+# Virtual environments
+venv/
+.venv/
+venv_binaspect/
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor settings
+# .vscode/
+# .idea/
+# .vs/
+# *.swp
+# *.swo
+# *~
