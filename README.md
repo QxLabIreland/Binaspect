@@ -65,26 +65,8 @@ The following scripts demonstrate some practical uses of the library for various
     <img src="images/ambisonics.png" alt="Ambisonics" style="width:70%;" />
 </p>
 
-<table style="border-collapse:collapse; border:none; width:100%;">
-    <tr>
-        <th style="border:none; text-align:left;">Reference (HOA)</th>
-        <th style="border:none; text-align:left;">Test (FOA)</th>
-    </tr>
-    <tr>
-        <td style="border:none; padding:0.4rem;">
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/ambisonic_examples/castanetsRev_dynamic_A0_A360_E30_HOA_REF_rendered.wav" type="audio/wav">
-                <!-- Your browser does not support the audio element. -->
-            </audio>
-        </td>
-        <td style="border:none; padding:0.4rem;">
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/ambisonic_examples/castanetsRev_dynamic_A0_A360_E30_FOA_REF_rendered.wav" type="audio/wav">
-                <!-- Your browser does not support the audio element. -->
-            </audio>
-        </td>
-    </tr>
-</table>
+- Reference (HOA): [Play audio](https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/ambisonic_examples/castanetsRev_dynamic_A0_A360_E30_HOA_REF_rendered.wav)
+- Test (FOA): [Play audio](https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/ambisonic_examples/castanetsRev_dynamic_A0_A360_E30_FOA_REF_rendered.wav)
 
 ---
 <br>
@@ -97,34 +79,9 @@ The following scripts demonstrate some practical uses of the library for various
     <img src="images/codec.png" alt="Codec" style="width:70%;" />
 </p>
 
-<table style="border-collapse:collapse; border:none; width:100%;">
-    <tr>
-        <th style="border:none; text-align:left;">Opus 512k</th>
-        <th style="border:none; text-align:left;">Opus 128k</th>
-        <th style="border:none; text-align:left;">Opus 32k</th>
-    </tr>
-    <tr>
-        <td style="border:none; padding:0.4rem;">
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/opus_examples/castanets360_opus512k.wav" type="audio/wav">
-                <!-- Your browser does not support the audio element. -->
-            </audio>
-        </td>
-        <td style="border:none; padding:0.4rem;">
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/opus_examples/castanets360_opus128k.wav" type="audio/wav">
-                <!-- Your browser does not support the audio element. -->
-            </audio>
-        </td>
-        <td style="border:none; padding:0.4rem;">
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/opus_examples/castanets360_opus32k.wav" type="audio/wav">
-                <!-- Your browser does not support the audio element. -->
-            </audio>
-        </td>
-    </tr>
-    
-</table>
+- Opus 512k: [Play audio](https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/opus_examples/castanets360_opus512k.wav)
+- Opus 128k: [Play audio](https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/opus_examples/castanets360_opus128k.wav)
+- Opus 32k: [Play audio](https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/opus_examples/castanets360_opus32k.wav)
 
 ---
 
@@ -138,26 +95,8 @@ The following scripts demonstrate some practical uses of the library for various
     <img src="images/downmix.png" alt="Downmix" style="width:70%;" />
 </p>
 
-<table style="border-collapse:collapse; border:none; width:100%;">
-    <tr>
-        <th style="border:none; text-align:left;">Rendered 7.1</th>
-        <th style="border:none; text-align:left;">Rendered 5.1</th>
-    </tr>
-    <tr>
-        <td style="border:none; padding:0.4rem;">
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/downmix_example/2_source_7_1.wav" type="audio/wav">
-                <!-- Your browser does not support the audio element. -->
-            </audio>
-        </td>
-        <td style="border:none; padding:0.4rem;">
-            <audio controls>
-                <source src="https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/downmix_example/2_source_5_1.wav" type="audio/wav">
-                <!-- Your browser does not support the audio element. -->
-            </audio>
-        </td>
-    </tr>
-</table>
+- Rendered 7.1: [Play audio](https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/downmix_example/2_source_7_1.wav)
+- Rendered 5.1: [Play audio](https://raw.githubusercontent.com/QxLabIreland/Binaspect/main/audio/downmix_example/2_source_5_1.wav)
 
 ---
 
