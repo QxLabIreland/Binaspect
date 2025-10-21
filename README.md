@@ -54,23 +54,114 @@ itd = binaspect.ITD_spect(audio, sr, start_freq=50, stop_freq=620, plots=False)
 ## Example Scripts
 The following scripts demonstrate some practical uses of the library for various tasks and might serve as a useful template for your own projects:
 
+
+<br>
+
 - [ambisonics_example.py](examples/ambisonics_example.py) - Basic example comparing HOA and FOA ambisonic renders. Plots ILR and ITD histograms and clearly shows differences in spatial representation.
+
+<br>
 
 <p align="center">
     <img src="images/ambisonics.png" alt="Ambisonics" style="width:70%;" />
 </p>
 
+<table style="border-collapse:collapse; border:none; width:100%;">
+    <tr>
+        <th style="border:none; text-align:left;">Reference (HOA)</th>
+        <th style="border:none; text-align:left;">Test (FOA)</th>
+    </tr>
+    <tr>
+        <td style="border:none; padding:0.4rem;">
+            <audio controls>
+                <source src="audio/ambisonic_examples/castanetsRev_dynamic_A0_A360_E30_HOA_REF_rendered.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td style="border:none; padding:0.4rem;">
+            <audio controls>
+                <source src="audio/ambisonic_examples/castanetsRev_dynamic_A0_A360_E30_FOA_REF_rendered.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+    </tr>
+</table>
+
+---
+<br>
+ 
 - [codec_example.py](examples/codec_example.py) - Compares lossy codec effects on binaural cues using ILR and ITD histograms and similarity scores.
+
+<br>
 
 <p align="center">
     <img src="images/codec.png" alt="Codec" style="width:70%;" />
 </p>
 
+<table style="border-collapse:collapse; border:none; width:100%;">
+    <tr>
+        <th style="border:none; text-align:left;">Opus 512k</th>
+        <th style="border:none; text-align:left;">Opus 128k</th>
+        <th style="border:none; text-align:left;">Opus 32k</th>
+    </tr>
+    <tr>
+        <td style="border:none; padding:0.4rem;">
+            <audio controls>
+                <source src="audio/opus_examples/castanets360_opus512k.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td style="border:none; padding:0.4rem;">
+            <audio controls>
+                <source src="audio/opus_examples/castanets360_opus128k.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td style="border:none; padding:0.4rem;">
+            <audio controls>
+                <source src="audio/opus_examples/castanets360_opus32k.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+    </tr>
+    
+</table>
+
+---
+
+<br>
+
 - [downmix_example.py](examples/downmix_example.py) - Examines binaural cue preservation in stereo downmixes from multichannel audio.
+
+<br>
 
 <p align="center">
     <img src="images/downmix.png" alt="Downmix" style="width:70%;" />
 </p>
+
+<table style="border-collapse:collapse; border:none; width:100%;">
+    <tr>
+        <th style="border:none; text-align:left;">Rendered 7.1</th>
+        <th style="border:none; text-align:left;">Rendered 5.1</th>
+    </tr>
+    <tr>
+        <td style="border:none; padding:0.4rem;">
+            <audio controls>
+                <source src="audio/downmix_example/2_source_7_1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td style="border:none; padding:0.4rem;">
+            <audio controls>
+                <source src="audio/downmix_example/2_source_5_1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+    </tr>
+</table>
+
+---
+
+<b>
 
 To run, use: `python -m examples.name_of_example`
 
@@ -334,4 +425,3 @@ ILD_spect(input_file, sr, start_freq=1700, stop_freq=4600, plots=False)
 ```python
 ild = ILD_spect(audio, 44100, 1700, 4600)
 ```
-
