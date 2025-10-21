@@ -5,24 +5,6 @@ import matplotlib.pyplot as plot
 import colormap
 
 
-# Features and Functions
-# 1 - ITD Histogram
-# 2 - ILR Histogram
-# 9 - ILD Histogram
-# 3 - ITD Spectrogram (and masks if applicable)
-# 8 - IPD Spectrogram (and masks if applicable)
-# 4 - ILR Spectrogram (and masks if applicable)
-# 7 - ILD Spectrogram (and masks if applicable)
-# 5 - ITD Difference Dynamic
-# 6 - ILR Difference Dynamic
-
-
-# change spect diff to just diff?
-# 10 - ITD Difference Spectrogram 
-# 11 - ILD Difference Spectrogram
-# 12 - IPD Difference Spectrogram
-
-
 def ITD_spect(input_file, sr, start_freq=50, stop_freq=620, plots=False):
     # Calculate the ITD spectragram of a stereo or binaural audio file
     
@@ -38,7 +20,7 @@ def ITD_spect(input_file, sr, start_freq=50, stop_freq=620, plots=False):
     if start_freq >= stop_freq:
         raise ValueError("Invalid frequency range. Valid range is [0, {}]".format(sr/2))
     
-    # # * Can only measure accurately up to 620 Hz because of modulo 2pi wrap around
+    # Notes
     # start_freq = 50                              # frequency in Hz to start processing
     # stop_freq = 620                           # frequency in Hz to stop processing
     
@@ -123,7 +105,6 @@ def IPD_spect(input_file, sr, start_freq=50, stop_freq=620, wrapped=False, plots
         raise ValueError("Invalid frequency range. Valid range is [0, {}]".format(sr/2))
 
     # Notes
-    # *Realistically we can only measure accurately up to 620 Hz because of modulo 2pi wrap around
     # start_freq = 50                              # frequency in Hz to start processing
     # stop_freq = 620                           # frequency in Hz to stop processing
     
@@ -201,8 +182,7 @@ def ILR_spect(input_file, sr, start_freq=1700, stop_freq=4600, plots=False):
     # 500 - 2000 => for spec diff mean plots
     # 1700 - 4600 => for ILR hists
     # Full Band (all bins) => for ML features in conjunction with binary mask if necessary
-    # start_freq = 500                          # frequency in Hz to start processing
-    # stop_freq = 2500                       # frequency in Hz to stop processing
+
 
     ILRstartbin = int(np.round(start_freq/bin_width))        # freq bin number to start processing
     ILRstopbin = int(np.round(stop_freq/bin_width))        # freq bin number to stop processing
@@ -272,8 +252,6 @@ def ILD_spect(input_file, sr, start_freq=1700, stop_freq=4600, plots=False):
     # 500 - 2000 => for spec diff mean plots
     # 1700 - 4600 => for ILD hists
     # Full Band (all bins) => for ML features in conjunction with binary mask if necessary
-    # start_freq = 500                          # frequency in Hz to start processing
-    # stop_freq = 2500                       # frequency in Hz to stop processing
 
     ILDstartbin = int(np.round(start_freq/bin_width))        # freq bin number to start processing
     ILDstopbin = int(np.round(stop_freq/bin_width))        # freq bin number to stop processing
@@ -486,7 +464,7 @@ def ITD_hist(input_file, sr, hist_size=400, start_freq=50, stop_freq=620, normal
     window_type = np.hanning(window_size)       # Window function
     bin_width = sr/window_size                   # Width of the frequency bins
      
-    # Note - Can only measure accurately up to 620 Hz because of modulo 2pi wrap around
+    # Note 
     # Idea - Try modify to use ILR as estimate of first arriving ear
     # start_freq = 50                             # frequency in Hz to start processing
     # stop_freq = 620                           # frequency in Hz to stop processing
@@ -629,7 +607,6 @@ def ILR_hist(input_file, sr, hist_size=400, start_freq=1700, stop_freq=4600, nor
         axs.set_xlim(0, xlimit[1])
         axs.axhline(hist_size/2, color='white', linestyle='--', linewidth=0.7)
         
-
     return ILR_histogram
 
 def ILD_hist(input_file, sr, hist_size=400, start_freq=1700, stop_freq=4600, dB_range=24, normalize=True, energyweighting=True , plots=False):
@@ -709,7 +686,6 @@ def ILD_hist(input_file, sr, hist_size=400, start_freq=1700, stop_freq=4600, dB_
         axs.set_xlim(0, xlimit[1])
         axs.axhline(hist_size/2, color='white', linestyle='--', linewidth=0.7)
         
-
     return ILD_histogram
 
 # Function to compare ITD Spectra
@@ -761,7 +737,6 @@ def ITD_sim(ref, test, sr, mode='signed', plots=False):
         axs[2].set_yticklabels([0, 0.25, 0.50, 0.75, 1])
         axs[2].set_xlim(0, hist_size)
         
-
     return avg_similarity
 
 
@@ -815,6 +790,4 @@ def ILR_sim(ref, test, sr, mode='signed', plots=False):
         axs[2].set_yticklabels([0, 0.25, 0.50, 0.75, 1])
         axs[2].set_xlim(0, hist_size)
         
-   
-
     return avg_similarity
