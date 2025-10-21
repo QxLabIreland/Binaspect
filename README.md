@@ -86,7 +86,7 @@ See `LICENSE` in the repository root.
 ## Table of Contents
 
 - [Usage](#usage)
-- [Examples](#examples)
+- [Examples](#example-scripts)
 - [Development](#development)
 - [API Documentation](#api-documentation)
 - [License](#license)
