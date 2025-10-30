@@ -27,6 +27,7 @@ You can read the paper here: [https://arxiv.org/abs/2510.25714](https://arxiv.or
 - Histograms: time–varying histograms for ITD/ILR/ILD (`ITD_hist`, `ILR_hist`, `ILD_hist`).
 - Similarity: simple comparison metrics (`ITD_sim`, `ILR_sim`).
 - ITD/IPD/ILR/ILD: spectrogram functions (`ITD_spect`, `IPD_spect`, `ILR_spect`, `ILD_spect`).
+- Inspection: functions to compare ILR/ITD histograms (`ILR_spect_diff`, `ITD_spect_diff`).
 - Examples: runnable scripts under `examples/` that load audio and render figures.
 
 ## Requirements
@@ -44,19 +45,20 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## Usage
+## Example Usage
 
 ```python
 import librosa
 import binaspect
 
-# Load stereo audio (2 x N) at a fixed sample rate
-audio, sr = librosa.load("path/to/file.wav", sr=44100, mono=False)
+# Load ref and test audio (2 x N) at a fixed sample rate
+ref_audio, sr = librosa.load("path/to/file.wav", sr=44100, mono=False)
+test_audio, sr = librosa.load("path/to/file.wav", sr=44100, mono=False)
 
-# Compute ITD spectrogram (plots disabled by default)
-itd = binaspect.ITD_spect(audio, sr, start_freq=50, stop_freq=620, plots=False)
+# Compute ITD and ILR Differences with plots
+ITD_spect_diff(ref_audio, test_audio, sr, title="", plots=True)
+ILR_spect_diff(ref_audio, test_audio, sr, title="", plots=True)
 
-# Enable plotting by passing plots=True in any API that supports it
 ```
 
 ## Example Scripts
