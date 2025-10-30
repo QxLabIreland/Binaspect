@@ -67,7 +67,7 @@ The following scripts demonstrate some practical uses of the library for various
 
 <br>
 
-- [ambisonics_example.py](examples/ambisonics_example.py) - Basic example comparing HOA and FOA ambisonic renders. Plots ILR and ITD histograms and clearly shows differences in spatial representation.
+- [ambisonics_example.py](examples/ambisonics_example.py) - Basic example comparing HOA and FOA ambisonic renders of castanets moving from 0 to 300 degrees. Plots ILR and ITD histograms and clearly shows differences in spatial representation.
 
 <br>
 
@@ -81,7 +81,7 @@ The following scripts demonstrate some practical uses of the library for various
 ---
 <br>
  
-- [codec_example.py](examples/codec_example.py) - Compares lossy codec effects on binaural cues using ILR and ITD histograms and similarity scores.
+- [codec_example.py](examples/codec_example.py) - Compares lossy codec effects on binaural cues using ILR and ITD histograms and similarity scores. Example shows Opus codec at 512 kbps, 128 kbps, and 32 kbps on castanets audio moving from 0 to 300 degrees.
 
 <br>
 
@@ -97,7 +97,7 @@ The following scripts demonstrate some practical uses of the library for various
 
 <br>
 
-- [downmix_example.py](examples/downmix_example.py) - Examines binaural cue preservation in stereo downmixes from multichannel audio.
+- [downmix_example.py](examples/downmix_example.py) - Examines binaural cue preservation in stereo downmixes from multichannel audio. This example shows a 7.1 source downmixed to 5.1 using ITD and ILR histograms and similarity scores. The audio contains two static sources at 0 and 90 degrees.
 
 <br>
 
